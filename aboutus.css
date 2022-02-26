@@ -1,0 +1,167 @@
+@import url("./global.css");
+
+body {
+	background: url("./image/aboutus-bg.png");
+	background-size: 100% auto;
+	font-family: "General-sans", sans-serif;
+	color: #ffffff;
+}
+
+.hero {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 3.125rem;
+}
+
+.hero > h1 {
+	width: 70%;
+	font-size: 1.875rem;
+	line-height: 200%;
+	font-weight: 400;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 5%;
+}
+
+.about {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.about > div {
+	width: 70%;
+	transform: translateX(-15%);
+}
+
+.about > div > div {
+	margin-bottom: 7.5rem;
+}
+
+.about > div > div > h2 {
+	font-size: 2rem;
+	letter-spacing: -0.075rem;
+	margin-bottom: 1.5rem;
+}
+
+.about > div > div > h4 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.about > div > div:nth-child(2) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 4.6875rem;
+	column-gap: 2rem;
+}
+
+.about > div > div:nth-child(2) > span > p {
+	opacity: 0.75;
+	line-height: 150%;
+	font-weight: 400;
+}
+
+.about > div > div:nth-child(2) > span > .title {
+	opacity: 1;
+	margin-bottom: 1.25rem;
+}
+
+footer {
+	padding: 03.125rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+footer > a {
+	margin-top: 1.3rem;
+	opacity: 0.5;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	column-gap: 0.35rem;
+}
+
+.about > svg {
+	transform-origin: center center;
+	transform: translateX(-50%);
+}
+
+.wiggly {
+	transform-origin: center;
+	animation: swirl 10s linear infinite;
+}
+
+@keyframes swirl {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		background-size: cover;
+	}
+
+	header {
+		padding: 3.125rem 4.6875rem;
+		width: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero {
+		height: 95vh;
+		padding: 0 1.25rem;
+		margin-bottom: 15vh;
+	}
+
+	.hero h1 {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	.hero nav{
+		padding: 0;
+		justify-content: space-between;
+    align-items: center;
+    column-gap: normal;
+	}
+
+	.hero nav a {
+		text-align: center;
+		/* width: 100%; */
+	}
+	
+	.about {
+		height: auto;
+	}
+
+	.about svg {
+		display: none;
+	}
+
+	.about div {
+		width: 100%;
+		padding: 1.25rem;
+		transform: none;
+	}
+	.about div div{
+		padding: 0;
+	}
+
+	footer {
+		padding: 1.25rem;
+	}
+
+}

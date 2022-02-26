@@ -1,0 +1,354 @@
+@import url("./global.css");
+
+html,
+body {
+	background-color: #111010;
+	color: #ffffff;
+	font-family: "GeneralSans-Variable";
+}
+
+.hero {
+	height: 180vh;
+	background-image: url("./image/case-study-arcenciel-bg.png");
+	background-size: 100% auto;
+	background-position: top;
+	border-bottom: 8px solid #f9c2a0;
+	padding: 3.125rem 4.6875rem;
+}
+
+.hero h1 {
+	font-size: 3.125rem;
+	line-height: 150%;
+	font-weight: 600;
+	letter-spacing: -0.05rem;
+	width: 75%;
+	margin-bottom: 3.125rem;
+}
+
+.hero span {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.25rem;
+}
+
+.hero span svg {
+	margin-right: 0.5rem;
+}
+
+header {
+	padding: 0px 0px !important;
+	margin-bottom: 6.25rem;
+}
+
+.hero img {
+	position: absolute;
+	z-index: 2;
+}
+
+.hero div {
+	display: flex;
+}
+
+.hero div svg {
+	position: relative;
+	top: 10vh;
+	/* z-index: -1; */
+}
+
+.background,
+.conflict {
+	padding: 3.125rem 4.6875rem;
+	padding-bottom: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 4.375rem;
+}
+
+section[name="content"] > div > svg {
+	margin-top: 5.625rem;
+	margin-bottom: 3.125rem;
+}
+
+section[name="content"] > div > h2 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 175%;
+	width: 80%;
+}
+
+section[name="content"] > svg {
+	transform: translateX(-3%);
+}
+
+.approach {
+	padding: 3.125rem 4.6875rem;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	margin-bottom: 4.375rem;
+}
+
+.approach > div > svg {
+	margin-top: 5.625rem;
+	margin-bottom: 3.125rem;
+}
+
+.approach > div > h2 {
+	/* margin-top: 1.875rem; */
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 175%;
+	width: 80%;
+	margin-bottom: 9.375rem;
+}
+
+.approach > svg {
+	transform: translateX(-3%);
+}
+
+.approach > div > span[name="small-title"] {
+	display: flex;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.approach > div > span > svg {
+	margin-right: 0.5rem;
+}
+
+div hr {
+	margin-top: 1.875rem;
+	opacity: 0.3;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.approach .happening {
+	height: 60vh;
+}
+
+.approach > .happening > div {
+	display: flex;
+}
+.approach > .happening > div > div:first-child {
+	width: 150%;
+}
+
+.approach > .happening > div > div > h2 > i {
+	font-weight: 400;
+	margin-top: 0px;
+	font-family: "Times New Roman", Times, serif;
+}
+.approach > div > div > div > h2 {
+	margin-top: 1.875rem;
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 175%;
+	width: 80%;
+}
+
+.approach > .happening > div > svg {
+	transform-origin: top right;
+	transform: scale(1000%) translateX(0.471rem);
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap; */
+}
+
+.card {
+	width: 22.6rem;
+	row-gap: 2.25rem;
+	margin-bottom: 2.25rem;
+}
+
+.card small {
+	font-size: 1.5rem;
+	color: #f9c2a0;
+}
+.card h3 {
+	margin-top: 1.25rem;
+	line-height: 175%;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.auditing {
+	margin-top: 9.375rem;
+}
+
+.auditing > hr {
+	margin-bottom: 1.875rem;
+}
+
+.auditing > div {
+	display: flex;
+}
+
+.auditing > div > div > h2 {
+	margin-top: 1.875rem;
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 175%;
+	width: 80%;
+	margin-bottom: 4.125rem;
+}
+
+.auditing > div > div > .issue {
+	margin-bottom: 1.875rem;
+	color: #f93333 !important;
+	width: 20% !important;
+	padding-bottom: 1rem;
+	position: relative;
+	width: auto;
+	justify-content: center;
+
+	background: linear-gradient(
+		180deg,
+		rgba(17, 16, 16, 0.15) 0%,
+		rgba(249, 51, 51, 0.15) 100%
+	);
+
+	display: flex;
+	row-gap: 0.125rem;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.auditing .issue svg {
+	margin-right: 0.5rem;
+}
+
+.auditing .issue::before {
+	display: block;
+	position: absolute;
+	content: "";
+	width: auto;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #f93333;
+}
+
+div.auditing > div > div > ul {
+	list-style: none;
+}
+div.auditing > div > div > ul li {
+	font-size: 1.25rem;
+	margin-bottom: 1.875rem;
+}
+
+.battle-plan {
+	margin-top: 9.375rem;
+}
+
+.battle-plan > h2 {
+	margin-top: 1.875rem;
+	margin-bottom: 4.6875rem;
+}
+
+.action {
+	padding: 0 !important;
+}
+
+.action div {
+	padding: 3.125rem 4.6875rem;
+}
+
+.action-section {
+	padding: 3.25rem 0px !important;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr 1fr;
+	align-items: center;
+}
+
+.action-section p {
+	opacity: 0.5;
+}
+
+.action-section h3 {
+	margin-top: 1.25rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 175%;
+	width: 75%;
+	letter-spacing: 0.075rem;
+}
+
+section.preview {
+	padding: 3.125rem 4rem;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 3.125rem;
+}
+
+.summary {
+	padding: 3.125rem 4.6875rem;
+	padding-bottom: 0;
+}
+
+.summary hr {
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	margin-top: 25vh;
+	opacity: 0.15;
+}
+
+footer {
+	padding: 3.125rem 4.6875rem;
+	display: flex;
+	justify-content: space-between;
+	height: 60vh;
+	align-items: flex-end;
+}
+
+footer span {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+footer span h3 {
+	font-size: 6.25rem;
+	font-weight: 600;
+}
+
+footer span a::after {
+	display: none !important;
+}
+footer span a:hover::after {
+	transition: none !important;
+}
+
+footer > a[name="card"] {
+	background-image: url("./image/card-two.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 15.625rem;
+	padding: 1.875rem;
+	font-size: 1.5rem !important;
+	width: 45%;
+	align-items: flex-end;
+	font-weight: 500;
+}
+
+footer > a[name="card"]::after {
+	display: none;
+}
+
+footer > a[name="card"]:hover::after {
+	transition: none !important;
+}
