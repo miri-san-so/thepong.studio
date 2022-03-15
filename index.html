@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./main.css" />
-		<link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
 		<title>ThePong</title>
 		<script>
 			window.onload = function () {
@@ -38,15 +38,19 @@
 			<div class="one">
 				<header>
 					<a href="./"> ThePong.Studio </a>
-					<p>Press <span class="key" onclick="location.href='./game.html'">K</span> to play</p>
+					<p>
+						Press
+						<span class="key" onclick="location.href='./game.html'">K</span> to
+						play
+					</p>
 				</header>
 				<script>
-					window.addEventListener("keydown", (e)=>{
+					window.addEventListener("keydown", (e) => {
 						console.log(e.key);
-						if(e.key === "k" || e.key==="K"){
-							window.location.href = "./game.html"
+						if (e.key === "k" || e.key === "K") {
+							window.location.href = "./game.html";
 						}
-					})
+					});
 				</script>
 				<h1>
 					<svg
@@ -65,7 +69,9 @@
 				<nav>
 					<a href="./aboutus.html">About Us</a>
 					<a href="./casestudy.html">Case Studies</a>
-					<a href="./audit.html">Free UX Audit</a>
+					<a href="https://forms.gle/5ToVrtZsdXQQHnnj7" target="_blank"
+						>Free UX Audit</a
+					>
 				</nav>
 			</div>
 			<div class="two">
